@@ -9,8 +9,8 @@ export function validateTeam(team) {
   const females = team.filter(c => c.Gender === "F").length;
 
   if (heroes < 2) return "Minimum 4 Heroes required.";
-  if (villains < 2) return "Minimum 2 Villains required.";
-  if (females < 2) return "Minimum 2 Female characters required.";
+  if (villains < 1) return "Minimum 2 Villains required.";
+  if (females < 1) return "Minimum 2 Female characters required.";
 
   return null;
 }
