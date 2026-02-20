@@ -1,6 +1,6 @@
 export function validateTeam(team) {
 
-  if (team.length < 6 || team.length > 8) {
+  if (team.length < 5 || team.length > 8) {
     return "Team must have 6–8 characters.";
   }
 
